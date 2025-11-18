@@ -6,6 +6,8 @@ import React, { useState } from 'react'
         const handleSubmit=(e)=>{
             e.preventDefault();
 
+            
+
             if(!amount) return;
 
             addIncome(Number(amount));
