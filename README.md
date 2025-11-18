@@ -1,16 +1,99 @@
-# React + Vite
+ 1. Ready-to-use README.md (copy–paste into your repo)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Create a file named README.md in your repo and paste this:
 
-Currently, two official plugins are available:
+Expense Tracker – React + Firebase Hosting
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A simple and clean personal expense tracking application built using React (Vite) and hosted on Firebase Hosting.
+The project includes fully automated CI/CD deployment using GitHub Actions.
 
-## React Compiler
+Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Add income and expenses
 
-## Expanding the ESLint configuration
+Dynamic chart visualization
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Local storage persistence
+
+Monthly summary
+
+Responsive UI
+
+Automatic deployment on every push to main
+
+ Tech Stack
+Layer	Technology
+Frontend	React + Vite
+Hosting	Firebase Hosting
+CI/CD	GitHub Actions
+Styling	CSS
+📂 Project Structure
+Expense-Tracker/
+├── public/
+├── src/
+│   ├── components/
+│   ├── pages/
+│   ├── App.jsx
+│   ├── main.jsx
+├── package.json
+├── firebase.json
+├── .firebaserc
+└── .github/workflows/firebase-hosting.yml
+
+⚙️ How to Run the Project Locally
+1. Install dependencies
+npm install
+
+2. Start development server
+npm run dev
+
+3. Build for production
+npm run build
+
+Firebase Hosting Setup (Used in This Project)
+
+Install Firebase CLI
+
+npm install -g firebase-tools
+
+
+Login
+
+firebase login
+
+
+Initialize Firebase Hosting
+
+firebase init
+
+
+Set the public folder as:
+
+dist
+
+🔄 Continuous Deployment (CI/CD)
+
+Every time you push code to the main branch, GitHub automatically:
+
+Installs dependencies
+
+Builds the project
+
+Deploys to Firebase Hosting
+
+Workflow file used:
+
+.github/workflows/firebase-hosting.yml
+
+ Live Demo
+
+Firebase Hosted URL:
+
+👉 https://expense-tracker-b7ea6.web.app/
+
+📦 Repository
+
+GitHub Repo (public):
+
+👉 https://github.com/DEVU-VIJAYAN/Expense-Tracker
+
