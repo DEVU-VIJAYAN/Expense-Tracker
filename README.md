@@ -1,9 +1,4 @@
  # test ci/cd
- 
- 
- 1. Ready-to-use README.md (copy–paste into your repo)
-
-Create a file named README.md in your repo and paste this:
 
 Expense Tracker – React + Firebase Hosting
 
@@ -12,13 +7,13 @@ The project includes fully automated CI/CD deployment using GitHub Actions.
 
 Features
 
-Add income and expenses
-
-Dynamic chart visualization
+Add income and expenses 
+Can see History of transations
+Dynamic chart visualization for analysis(pie chart)
 
 Local storage persistence
 
-Monthly summary
+Monthly summary(can download as csv)
 
 Responsive UI
 
