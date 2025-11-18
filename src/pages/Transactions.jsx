@@ -1,6 +1,8 @@
 import React from "react";
 
 const Transactions = () => {
+    // Load the full transaction history from localStorage
+  // Fallback to empty array if nothing is stored
   const data = JSON.parse(localStorage.getItem("transactions")) || [];
 
   return (

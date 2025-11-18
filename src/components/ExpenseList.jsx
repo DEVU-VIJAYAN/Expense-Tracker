@@ -1,5 +1,10 @@
 import React from "react";
 
+/*
+ * - Displays a list of all added expenses.
+ * - Receives "expenses" array from Home.jsx.
+ * - Shows a fallback message when no expenses exist.
+ */
 const ExpenseList = ({ expenses }) => {
   return (
 <div className="bg-white/90 backdrop-blur p-6 rounded-xl shadow-md border">

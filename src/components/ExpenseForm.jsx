@@ -1,5 +1,10 @@
 import React, { useState } from 'react'
 
+
+/* - Contains inputs for "title" and "amount".
+ * - Sends the new expense to the parent (Home.jsx) using addExpense().
+ */
+
 const ExpenseForm = ({ addExpense }) => {
 
   const [title, setTitle] = useState("")
@@ -8,17 +13,17 @@ const ExpenseForm = ({ addExpense }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-
+    // Basic validation to avoid empty submissions
     if (!title || !amount) {
       alert("Please enter both title and amount")
       return
     }
-
+    // Pass new expense object to Home.jsx
     addExpense({
       title,
-      amount: parseFloat(amount),
+      amount: parseFloat(amount),// Convert text to number
     })
-
+    // To clear form after submission
     setTitle("")
     setAmount("")
   }
